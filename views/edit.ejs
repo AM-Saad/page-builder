@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('./includes/styles.ejs') %>
+    <link href="/general.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="editor-controls">
+  
+    </div>
+    
+    <div class="left-bar menu-collapsed-wrapper">
+        <ul class="left-bar-items menu-collapsed">
+            <li class="left-bar-item first-panel pages-panel-pp" data-automation-id="leftBarButton-pages.pagesPanel">
+                <svg width="23" height="26" viewBox="0 0 22 26" class="symbol symbol-leftBarPagesPanelManager icon">
+                    <path fill-rule="evenodd"
+                        d="M17 0a5 5 0 0 1 5 5v16a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h12zm0 20V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1zM8 10V8h6v2H8zm0 4v-2h6v2H8zm0 4v-2h6v2H8z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">Menus &amp; Pages</span></li>
+            <li class="left-bar-item bg-panel" data-automation-id="leftBarButton-rEditor.panels.backgroundPanel"><svg
+                    width="25" height="25" baseProfile="full" viewBox="0 0 25 25"
+                    class="symbol symbol-leftBarBackgroundPanel icon">
+                    <path
+                        d="M19.5 5.5v14h-14v-14h14m0-5h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">Background</span></li>
+            <li class="left-bar-item add-panel" data-automation-id="leftBarButton-addPanelInfra.addPanel"><svg
+                    width="26" height="25" baseProfile="full" viewBox="0 0 26 25"
+                    class="symbol symbol-leftBarAddPanel icon">
+                    <path
+                        d="M12.99 0C6.189 0 .51 5.678.51 12.479.51 19.28 6.189 25 12.99 25c6.8 0 12.5-5.699 12.5-12.5S19.79 0 12.99 0zm6.676 14h-5v5h-3v-5h-5v-3h5V6h3v5h5v3z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">Add</span></li>
+            <li class="left-bar-item app-market-panel" data-automation-id="leftBarButton-tpa.compPanels.appMarketPanel">
+                <svg width="25" height="25" viewBox="0 0 25 25" class="symbol symbol-leftBarAppMarketPanel-D icon">
+                    <g id="Page-1" fill="none" fill-rule="evenodd">
+                        <path id="Combined-Shape" fill="#FFF"
+                            d="M19 6V3h-2v3h-3v2h3v3h2V8h3V6h-3zM0 6.997C0 5.894.896 5 1.997 5h5.006C8.106 5 9 5.896 9 6.997v5.006A1.998 1.998 0 0 1 7.003 14H1.997A1.998 1.998 0 0 1 0 12.003V6.997zm0 11C0 16.894.896 16 1.997 16h5.006C8.106 16 9 16.896 9 17.997v5.006A1.998 1.998 0 0 1 7.003 25H1.997A1.998 1.998 0 0 1 0 23.003v-5.006zm11 0c0-1.103.896-1.997 1.997-1.997h5.006c1.103 0 1.997.896 1.997 1.997v5.006A1.998 1.998 0 0 1 18.003 25h-5.006A1.998 1.998 0 0 1 11 23.003v-5.006zm0-15.991C11 .898 11.897 0 13.006 0h9.988C24.102 0 25 .897 25 2.006v9.988A2.005 2.005 0 0 1 22.994 14h-9.988A2.005 2.005 0 0 1 11 11.994V2.006z">
+                        </path>
+                    </g>
+                </svg><span class="mask"></span><span class="text">Add Apps</span></li>
+            <li class="left-bar-item media-manager-panel-icon-c"
+                data-automation-id="leftBarButton-rEditor.panels.mediaManagerPanel"><svg width="25" height="24"
+                    viewBox="0 0 25 24" class="symbol symbol-leftBarMediaPanelC icon">
+                    <path
+                        d="M21.5 21.003c.38 0 .62-.41.439-.75l-3.72-6.68a.991.991 0 0 0-1.74 0l-2.787 5.007a.3.3 0 0 1-.52.008l-.694-1.154a1.001 1.001 0 0 0-1.718-.001l-1.69 2.81a.501.501 0 0 0 .43.76h12zm-10-11c-.83 0-1.5.67-1.5 1.5 0 .82.67 1.5 1.5 1.5s1.5-.68 1.5-1.5c0-.83-.67-1.5-1.5-1.5zm10.5-3c1.66 0 3 1.34 3 3v11A3 3 0 0 1 22 24H9a3 3 0 0 1-3-2.997v-11c0-1.66 1.34-3 3-3h13zM20 4v1H9a5 5 0 0 0-5 5v7.003H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4.172a2 2 0 0 1 1.414.585L9 2h9a2 2 0 0 1 2 2z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">Media</span></li>
+            <li class="left-bar-item new-blog-panel" data-automation-id="leftBarButton-blog.newMenuPanel"><svg
+                    width="18" height="30" viewBox="0 0 18 30" class="symbol symbol-leftBarNewBlogPanel icon">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#000"
+                            d="M13.5 2h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5M13.662 4H4.338a.5.5 0 0 0-.464.314L.001 14l8 16h.5V16.929a1.997 1.997 0 0 1 .06-3.882A2.002 2.002 0 0 1 11.002 15c0 .931-.64 1.706-1.5 1.929V30h.5l8-16-3.878-9.686A.5.5 0 0 0 13.663 4">
+                        </path>
+                    </g>
+                </svg><span class="mask"></span><span class="text">My Blog</span></li>
+            <li class="left-bar-item wait-for-click wix-store-panel"
+                data-automation-id="leftBarButton-wixStore.panels.wixStorePanel"><svg width="22" height="27"
+                    baseProfile="full" viewBox="0 0 22 27" class="symbol symbol-leftBarWixStorePanel icon">
+                    <path
+                        d="M19.5 5.996h-4v3.992c0 .277-1.224.5-1.5.5a.5.5 0 0 1-.5-.5V5.996h2V4.037c.029-.348.063-1.632-.875-2.696C13.842.454 12.644.004 11.063.004 9.487.004 8.278.45 7.469 1.33 6.404 2.486 6.49 3.913 6.5 3.988v2.008h2v3.992a.5.5 0 0 1-.5.5c-.276 0-1.5-.223-1.5-.5V5.996h-4L.709 24.806a2 2 0 0 0 1.991 2.19h16.601a2 2 0 0 0 1.99-2.19L19.5 5.996zm-11 0l-.003-2.074c0-.008-.035-.731.457-1.251.417-.441 1.127-.666 2.109-.666.971 0 1.662.217 2.05.647.457.504.395 1.215.395 1.215L13.5 5.996h-5z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">My Store</span></li>
+            <li class="left-bar-item wix-bookings-panel"
+                data-automation-id="leftBarButton-wixBookings.panels.bookingsPanel"><svg width="27" height="29"
+                    viewBox="0 0 27 29" class="symbol symbol-leftBarWixBookingsPanel icon">
+                    <path fill="#733ca6" fill-rule="evenodd"
+                        d="M23.849 23.5H3.151a2 2 0 0 1-1.923-2.549L2.5 16.5h6.6v3h1.846v-3h4.63a19.091 19.091 0 0 0-.49 3h1.976a12.058 12.058 0 0 1 .313-3H24.5l1.272 4.451a2 2 0 0 1-1.923 2.549zM20.04 12.39v-1.867h-6.214v2h3.754A7.058 7.058 0 0 0 16.049 15h-5.1v-4.477H9.478c-.057.38-.463.87-2.477.87V13H9.1v2H2.5V7.5a3 3 0 0 1 3-3h1.562V5a1.5 1.5 0 0 0 3 0v-.5h6.875V5a1.5 1.5 0 0 0 3 0v-.5H21.5a3 3 0 0 1 3 3V15h-6.65a5.221 5.221 0 0 1 2.19-2.61zM7.062 2a1.5 1.5 0 0 1 3 0v2.5h-3V2zm9.875 0a1.5 1.5 0 0 1 3 0v2.5h-3V2zM21 27.5H6A2.5 2.5 0 0 1 3.5 25h20a2.5 2.5 0 0 1-2.5 2.5z">
+                    </path>
+                </svg><span class="mask"></span><span class="text">Bookings</span></li>
+        </ul>
+    </div>
+
+    <div id="prev">
+        <iframe src="/templates/<%=name%>" id="myFrame" frameborder="0"></iframe>
+    </div>
+    <script src="/components/holder_options.js"></script>
+    <script src="/components/options.js"></script>
+    <script src="/modules/helpers.js"></script>
+    <script src="/modules/editor.js"></script>
+    <script src="/modules/drag.js"></script>
+    <script src="/modules/main.js"></script>
+    <%- include('./includes/scripts.ejs') %>
+</body>
+
+</html>

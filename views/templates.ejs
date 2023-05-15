@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="/classes.css" rel="stylesheet">
+    <link href="/templates.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h3>All Templates</h3>
+        <div class=" grid g-three bg-lightgray p-medium templates">
+
+            <% if(files.length> 0){ %>
+            <% for (let t of files) { %>
+            <div class="grid p-3 bg-w m-3 template">
+                <span href="" class="template-title"><%= t.replace('.ejs' , '').slice(6) %></span>
+                <div class="flex">
+                    <a class="btn btn-success" href="/templates/<%=t.replace('.html' , '')%>">Preview</a>
+                    <a class="btn btn-info" href="/templates/edit/<%= t.replace('.html' , '') %>">Edit</a>
+                </div>
+            </div>
+
+            <%}%>
+                <%}%>
+        </div>
+    </div>
+    <%- include('./includes/scripts.ejs') %>
+</body>
+
+</html>
